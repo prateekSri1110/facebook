@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Facebook</title>
+        <link rel="icon" href="fb.png">
+        <link rel="stylesheet" href="fb.css">
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body bgcolor="black">
+        <nav class="container-fluid  bg-dark ">
+            <div class="row">
+                <div class="col-sm-3" id="brand">
+                    <img class="navbar-brand logo" src="fb.png" alt="facebook">
+                    <input id="input" type="search"
+                        class="form-control bg-dark text-white"
+                        placeholder="Search facebook"
+                        aria-label="Search" />
+                </div>
+                <div class="col-sm-6" style="text-align: center;">
+                    <button class="btn" id="btn1"><a href="fb.html"><img
+                                src="1.png" class="cent"></a></button>
+                    <button class="btn" id="btn2"><a href="fb1.html"><img
+                                src="2.png" class="cent"></a></button>
+                    <button class="btn" id="btn3"><a href="fb1.html"><img
+                                src="3.png" class="cent"></a></button>
+                    <button class="btn" id="btn4"><a href="fb1.html"><img
+                                src="4.png" class="cent"></a></button>
+                    <button class="btn" id="btn5"><a href="fb1.html"><img
+                                src="5.png" class="cent"></a></button>
+                </div>
+                <div class="col-sm-3" id="ab" style="text-align: right;">
+                    <img src="6.png" class="img-responsive" id="left">
+                    <img src="7.png" id="left">
+                    <img src="8.png" id="left">
+                    <a href="fbhome.html"><img src="9.png" id="left"></a>
+                </div>
+            </div>
+        </nav>
+            <div class="container-fluid p-0">
+                <img class="img-responsive" src="me2.png" style=" width: 100%;" id="bg">
+            </div>
+            <script>
+
+                $(document).ready(function(){
+                    $('#btn3').click(function(){
+                            $('#bg').attr('src','me3.png');
+                    });
+                });
+                $(document).ready(function(){
+                    $('#btn4').click(function(){
+                            $('#bg').attr('src','me4.png');
+                    });
+                });
+                $(document).ready(function(){
+                    $('#btn5').click(function(){
+                            $('#bg').attr('src','me5.png');
+                    });
+                });
+
+            </script>
+        </body>
+    </html>
